@@ -1,5 +1,5 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
-import '../src/styles/global.css'
+import '../src/styles/styles.css'
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

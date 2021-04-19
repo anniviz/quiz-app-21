@@ -1,5 +1,5 @@
 {
-  "name": "javascript-app-template",
+  "name": "quiz-app",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
@@ -25,12 +25,12 @@
   },
   "devDependencies": {
     "@babel/core": "7.12.10",
-    "@storybook/addon-a11y": "6.1.17",
-    "@storybook/addon-actions": "6.1.17",
-    "@storybook/addon-design-assets": "6.1.17",
-    "@storybook/addon-essentials": "6.1.17",
-    "@storybook/addon-links": "6.1.17",
-    "@storybook/html": "6.1.17",
+    "@storybook/addon-a11y": "6.2.8",
+    "@storybook/addon-actions": "6.2.8",
+    "@storybook/addon-design-assets": "6.2.8",
+    "@storybook/addon-essentials": "6.2.8",
+    "@storybook/addon-links": "6.2.8",
+    "@storybook/html": "6.2.8",
     "babel-loader": "8.2.2",
     "eslint": "7.19.0",
     "eslint-config-prettier": "7.2.0",

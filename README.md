@@ -1,4 +1,4 @@
-# JavaScript App Template
+# Quiz App Template
 
 ## Template usage
 
@@ -7,8 +7,8 @@ _Don't forget to update the author (and more) in the package.json_
 ## Installation
 
 ```shell
-$ git clone <project-url> <project-name>
-$ cd <project-name>
+$ git clone <project-url> quiz-app
+$ cd quiz-app
 $ npm i # install all dependencies
 $ npm test # run tests
 $ npm start # start development server
