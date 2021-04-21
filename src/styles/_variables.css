@@ -1,5 +1,13 @@
 :root {
   --color-white: #fefefe;
   --color-black: #111;
-  --color-primary: #333;
+  --color-primary: #4b778d;
+  --color-secondary: #28b5b5;
+  --color-light-primary: #8fd9a8;
+  --color-light-secondary: #d2e69c;
+  --margin-24: 24px;
+  --margin-x-24: 0 24px;
+  --padding-12: 12px;
+  --border-radius-12: 12px;
+  --border-radius-8: 8px;
 }
