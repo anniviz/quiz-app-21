@@ -32,10 +32,14 @@
 }
 
 .quiz-card__bookmark {
-  width: 0;
-  border: 12px solid crimson;
+  border: 12px solid lightgray;
   border-bottom-color: transparent;
   position: absolute;
   right: 10px;
   top: -8px;
+}
+
+.quiz-card__bookmark--selected {
+  border: 12px solid crimson;
+  border-bottom-color: transparent;
 }
