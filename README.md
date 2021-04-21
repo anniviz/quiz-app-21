@@ -11,7 +11,7 @@ $ git clone <project-url> quiz-app
 $ cd quiz-app
 $ npm i # install all dependencies
 $ npm test # run tests
-$ npm start # start development server
+$ npm run dev # start development server
 $ npm run storybook # start living styleguide server
 $ npm run build # build project for deployment
 ```
