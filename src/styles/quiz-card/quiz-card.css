@@ -1,3 +1,6 @@
-.quizcard {
-  background: blue;
+.quiz-card {
+  background: var(--color-secondary);
+  margin: var(--margin-24);
+  padding: var(--padding-12);
+  border-radius: var(--border-radius-12);
 }
