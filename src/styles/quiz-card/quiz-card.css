@@ -1,9 +1,13 @@
 .quiz-card {
   position: relative;
   background: var(--color-secondary);
-  margin: var(--margin-24);
+  margin: var(--margin-x-24);
   padding: var(--padding-12);
   border-radius: var(--border-radius-12);
+}
+
+.quiz-card:first-child {
+  margin-top: 24px;
 }
 
 .quiz-card__button {
