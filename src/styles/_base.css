@@ -3,6 +3,10 @@
 }
 
 body {
+  height: 100vh;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-rows: 48px auto;
   background-color: var(--color-light-secondary);
   color: var(--color-black);
   font-family: sans-serif;
@@ -21,4 +25,8 @@ h3 {
 input,
 button {
   font-size: 1em;
+}
+
+ul {
+  padding: 0;
 }
