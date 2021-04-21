@@ -1,0 +1,5 @@
+.app-footer {
+  background: var(--color-primary);
+  height: 60px;
+  padding: 12px;
+}
