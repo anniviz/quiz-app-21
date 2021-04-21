@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: var(--color-white);
+  background-color: var(--color-light-secondary);
   color: var(--color-black);
   font-family: sans-serif;
   font-size: 112.5%;

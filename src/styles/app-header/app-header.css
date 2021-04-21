@@ -1,6 +1,6 @@
 .app-header {
   background: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-light-secondary);
   padding: 12px;
 }
 
