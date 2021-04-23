@@ -1,0 +1,25 @@
+.app-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: var(--color-primary);
+  height: 60px;
+  text-align: center;
+  align-content: center;
+  color: var(--color-light-secondary);
+  font-size: 36px;
+}
+
+.app-footer > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
