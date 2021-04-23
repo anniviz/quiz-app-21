@@ -1,4 +1,17 @@
-.profile-picture {
-  width: 200px;
+.app-main-profile {
+  display: grid;
+  grid-gap: 24px;
+  overflow-y: scroll;
+}
+
+.app-main-profile__heading {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: var(--margin-24);
+}
+
+.app-main-profile__heading > img {
+  width: 160px;
   border-radius: 50%;
 }
