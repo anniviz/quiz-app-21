@@ -13,30 +13,24 @@
   </head>
   <body>
     <header class="app-header">
-      <h1 class="app-header__heading">Profile</h1>
+      <h1 class="app-header__heading">Create</h1>
     </header>
-    <main class="app-main-profile">
-      <div class="app-main-profile__heading">
-        <img src="./assets/goldfisch.jpg" alt="" />
-        <h2>Paul Klee</h2>
-      </div>
-      <p class="app-main-profile__about">
-        Paul Klee's attitude to animals was a matter of surprise to his
-        contemporaries. From childhood on he kept a cat, and, as this was known,
-        nobody was surprised at his man variations on this theme. This wondrous
-        goldfish is in deep blue water, other little red and purple fishes
-        rather keeping out of his majesty's way.
-      </p>
-      <div class="app-main-profile__skills">
-        <h3>Skills</h3>
-        <ul>
-          <li>paintings</li>
-          <li>expressionism</li>
-          <li>cubism</li>
-          <li>surrealism</li>
-        </ul>
-      </div>
-      <button>log out</button>
+    <main>
+      <form>
+        <label>
+          Add question:
+          <textarea cols="30" rows="5"> </textarea>
+        </label>
+        <label>
+          Add answer:
+          <textarea cols="30" rows="5"> </textarea>
+        </label>
+        <div>
+          <label for="tags"> Add tags divided by comma: </label>
+          <input id="tags" type="text" />
+        </div>
+        <button>Submit</button>
+      </form>
     </main>
     <nav class="app-footer">
       <a href="index.html" class="material-icons md-36" aria-label="home"
@@ -50,13 +44,13 @@
       >
       <a
         href="create-page.html"
-        class="material-icons md-36"
+        class="material-icons md-36 active-nav-item"
         aria-label="create new card"
         >create</a
       >
       <a
         href="profile-page.html"
-        class="material-icons md-36 active-nav-item"
+        class="material-icons md-36"
         aria-label="profile"
         >face</a
       >

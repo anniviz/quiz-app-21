@@ -2,4 +2,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  height: calc(100vh - 48px - 60px);
+  padding: 24px;
 }
