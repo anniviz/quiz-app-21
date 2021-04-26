@@ -11,6 +11,13 @@
 
 .app-footer > a {
   text-decoration: none;
+  color: inherit;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
 
 .material-icons.md-36 {
@@ -18,9 +25,5 @@
 }
 
 .active-nav-item {
-  color: lightsalmon;
-}
-
-.inactive-nav-item {
-  color: var(--color-light-secondary);
+  color: lightsalmon !important;
 }
