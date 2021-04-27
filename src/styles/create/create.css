@@ -5,3 +5,12 @@ form {
   height: calc(100vh - 48px - 60px);
   padding: 24px;
 }
+
+input,
+textarea {
+  background: lightyellow;
+  border: none;
+  border-radius: 4px;
+  resize: none;
+  width: 90%;
+}
