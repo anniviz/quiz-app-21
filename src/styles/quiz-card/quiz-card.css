@@ -29,10 +29,6 @@
   margin-top: 24px;
 }
 
-.quiz-card__answer {
-  visibility: hidden;
-}
-
 .quiz-card__tag {
   list-style: none;
   display: inline-block;
