@@ -7,8 +7,10 @@ const buttonHome = document.querySelector('.button-home')
 const buttonBookmarks = document.querySelector('.button-bookmarks')
 const buttonCreate = document.querySelector('.button-create')
 const buttonProfile = document.querySelector('.button-profile')
+const buttonAnswer = document.querySelector('.js-button-answer')
 
 const bookmark = document.querySelector('.js-quiz-card > div')
+const answer = document.querySelector('.js-quiz-card__answer')
 
 buttonHome.addEventListener('click', () => {
   homePage.classList.remove('hidden')
@@ -56,6 +58,10 @@ buttonProfile.addEventListener('click', () => {
   buttonBookmarks.classList.remove('active-nav-item')
   buttonCreate.classList.remove('active-nav-item')
   buttonProfile.classList.add('active-nav-item')
+})
+
+buttonAnswer.addEventListener('click', () => {
+  answer.classList.toggle('hidden')
 })
 
 bookmark.addEventListener('click', () => {
