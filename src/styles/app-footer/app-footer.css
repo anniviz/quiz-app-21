@@ -9,6 +9,11 @@
   font-size: 36px;
 }
 
+.darkmode .app-footer {
+  background: var(--color-dark-secondary);
+  color: var(--color-dark-third);
+}
+
 .material-icons.md-36 {
   font-size: 36px;
 }

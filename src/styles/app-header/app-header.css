@@ -4,6 +4,11 @@
   padding: 12px;
 }
 
+.darkmode .app-header {
+  background: var(--color-dark-secondary);
+  color: var(--color-dark-third);
+}
+
 .app-header__heading {
   font-weight: 400;
   font-size: 1.2rem;

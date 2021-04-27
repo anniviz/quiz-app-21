@@ -8,9 +8,11 @@ const buttonBookmarks = document.querySelector('.button-bookmarks')
 const buttonCreate = document.querySelector('.button-create')
 const buttonProfile = document.querySelector('.button-profile')
 const buttonAnswer = document.querySelector('.js-button-answer')
+const buttonDarkMode = document.querySelector('.js-button-darkmode')
 
 const bookmark = document.querySelector('.js-quiz-card > div')
 const answer = document.querySelector('.js-quiz-card__answer')
+const body = document.querySelector('body')
 
 buttonHome.addEventListener('click', () => {
   homePage.classList.remove('hidden')
@@ -66,4 +68,8 @@ buttonAnswer.addEventListener('click', () => {
 
 bookmark.addEventListener('click', () => {
   bookmark.classList.toggle('quiz-card__bookmark--selected')
+})
+
+buttonDarkMode.addEventListener('click', () => {
+  body.classList.toggle('darkmode')
 })

@@ -40,3 +40,7 @@
   font-size: 80%;
   border-radius: 4px;
 }
+
+.darkmode li {
+  background: var(--color-dark-secondary);
+}
