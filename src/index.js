@@ -15,20 +15,6 @@ const bookmark = document.querySelector('.js-quiz-card > div')
 const answer = document.querySelector('.js-quiz-card__answer')
 const body = document.querySelector('body')
 
-const hideAllPages = () => {
-  homePage.classList.add('hidden')
-  bookmarksPage.classList.add('hidden')
-  createPage.classList.add('hidden')
-  profilePage.classList.add('hidden')
-}
-
-const deactivateAllButtons = () => {
-  buttonHome.classList.remove('active-nav-item')
-  buttonBookmarks.classList.remove('active-nav-item')
-  buttonCreate.classList.remove('active-nav-item')
-  buttonProfile.classList.remove('active-nav-item')
-}
-
 buttonHome.addEventListener('click', () => {
   header.innerText = 'Quiz App'
 
@@ -80,3 +66,17 @@ bookmark.addEventListener('click', () => {
 buttonDarkMode.addEventListener('click', () => {
   body.classList.toggle('darkmode')
 })
+
+function hideAllPages() {
+  homePage.classList.add('hidden')
+  bookmarksPage.classList.add('hidden')
+  createPage.classList.add('hidden')
+  profilePage.classList.add('hidden')
+}
+
+function deactivateAllButtons() {
+  buttonHome.classList.remove('active-nav-item')
+  buttonBookmarks.classList.remove('active-nav-item')
+  buttonCreate.classList.remove('active-nav-item')
+  buttonProfile.classList.remove('active-nav-item')
+}
