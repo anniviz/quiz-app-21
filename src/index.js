@@ -10,11 +10,14 @@ const buttonProfile = document.querySelector('.button-profile')
 const buttonAnswer = document.querySelector('.js-button-answer')
 const buttonDarkMode = document.querySelector('.js-button-darkmode')
 
+const header = document.querySelector('[data-header]')
 const bookmark = document.querySelector('.js-quiz-card > div')
 const answer = document.querySelector('.js-quiz-card__answer')
 const body = document.querySelector('body')
 
 buttonHome.addEventListener('click', () => {
+  header.innerText = 'Quiz App'
+
   homePage.classList.remove('hidden')
   bookmarksPage.classList.add('hidden')
   createPage.classList.add('hidden')
@@ -27,6 +30,8 @@ buttonHome.addEventListener('click', () => {
 })
 
 buttonBookmarks.addEventListener('click', () => {
+  header.innerText = 'Bookmarks'
+
   homePage.classList.add('hidden')
   bookmarksPage.classList.remove('hidden')
   createPage.classList.add('hidden')
@@ -39,6 +44,8 @@ buttonBookmarks.addEventListener('click', () => {
 })
 
 buttonCreate.addEventListener('click', () => {
+  header.innerText = 'New Question'
+
   homePage.classList.add('hidden')
   bookmarksPage.classList.add('hidden')
   createPage.classList.remove('hidden')
@@ -51,6 +58,8 @@ buttonCreate.addEventListener('click', () => {
 })
 
 buttonProfile.addEventListener('click', () => {
+  header.innerText = 'Profile'
+
   homePage.classList.add('hidden')
   bookmarksPage.classList.add('hidden')
   createPage.classList.add('hidden')
