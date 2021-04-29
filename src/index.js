@@ -15,33 +15,10 @@ const bookmark = document.querySelector('.js-quiz-card > div')
 const answer = document.querySelector('.js-quiz-card__answer')
 const body = document.querySelector('body')
 
-buttonHome.addEventListener('click', () => {
-  header.innerText = 'Quiz App'
-
-  changePage(homePage)
-  activateButton(buttonHome)
-})
-
-buttonBookmarks.addEventListener('click', () => {
-  header.innerText = 'Bookmarks'
-
-  changePage(bookmarksPage)
-  activateButton(buttonBookmarks)
-})
-
-buttonCreate.addEventListener('click', () => {
-  header.innerText = 'New Question'
-
-  changePage(createPage)
-  activateButton(buttonCreate)
-})
-
-buttonProfile.addEventListener('click', () => {
-  header.innerText = 'Profile'
-
-  changePage(profilePage)
-  activateButton(buttonProfile)
-})
+buttonHome.addEventListener('click', navigateToHome)
+buttonBookmarks.addEventListener('click', navigateToBookmarks)
+buttonCreate.addEventListener('click', navigateToCreate)
+buttonProfile.addEventListener('click', navigateToProfile)
 
 buttonAnswer.addEventListener('click', () => {
   answer.classList.toggle('hidden')
@@ -55,12 +32,40 @@ buttonDarkMode.addEventListener('click', () => {
   body.classList.toggle('darkmode')
 })
 
+function navigateToHome() {
+  header.innerText = 'Quiz App'
+
+  changePage(homePage)
+  selectButton(buttonHome)
+}
+
+function navigateToBookmarks() {
+  header.innerText = 'Bookmarks'
+
+  changePage(bookmarksPage)
+  selectButton(buttonBookmarks)
+}
+
+function navigateToCreate() {
+  header.innerText = 'New Question'
+
+  changePage(createPage)
+  selectButton(buttonCreate)
+}
+
+function navigateToProfile() {
+  header.innerText = 'Profile'
+
+  changePage(profilePage)
+  selectButton(buttonProfile)
+}
+
 function changePage(page) {
   hideAllPages()
   page.classList.remove('hidden')
 }
 
-function activateButton(button) {
+function selectButton(button) {
   deactivateAllButtons()
   button.classList.add('active-nav-item')
 }
