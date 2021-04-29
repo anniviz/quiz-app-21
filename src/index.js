@@ -15,59 +15,57 @@ const bookmark = document.querySelector('.js-quiz-card > div')
 const answer = document.querySelector('.js-quiz-card__answer')
 const body = document.querySelector('body')
 
-buttonHome.addEventListener('click', () => {
-  header.innerText = 'Quiz App'
-
-  homePage.classList.remove('hidden')
+const hideAllPages = () => {
+  homePage.classList.add('hidden')
   bookmarksPage.classList.add('hidden')
   createPage.classList.add('hidden')
   profilePage.classList.add('hidden')
+}
 
-  buttonHome.classList.add('active-nav-item')
+const deactivateAllButtons = () => {
+  buttonHome.classList.remove('active-nav-item')
   buttonBookmarks.classList.remove('active-nav-item')
   buttonCreate.classList.remove('active-nav-item')
   buttonProfile.classList.remove('active-nav-item')
+}
+
+buttonHome.addEventListener('click', () => {
+  header.innerText = 'Quiz App'
+
+  hideAllPages()
+  homePage.classList.remove('hidden')
+
+  deactivateAllButtons()
+  buttonHome.classList.add('active-nav-item')
 })
 
 buttonBookmarks.addEventListener('click', () => {
   header.innerText = 'Bookmarks'
 
-  homePage.classList.add('hidden')
+  hideAllPages()
   bookmarksPage.classList.remove('hidden')
-  createPage.classList.add('hidden')
-  profilePage.classList.add('hidden')
 
-  buttonHome.classList.remove('active-nav-item')
+  deactivateAllButtons()
   buttonBookmarks.classList.add('active-nav-item')
-  buttonCreate.classList.remove('active-nav-item')
-  buttonProfile.classList.remove('active-nav-item')
 })
 
 buttonCreate.addEventListener('click', () => {
   header.innerText = 'New Question'
 
-  homePage.classList.add('hidden')
-  bookmarksPage.classList.add('hidden')
+  hideAllPages()
   createPage.classList.remove('hidden')
-  profilePage.classList.add('hidden')
 
-  buttonHome.classList.remove('active-nav-item')
-  buttonBookmarks.classList.remove('active-nav-item')
+  deactivateAllButtons()
   buttonCreate.classList.add('active-nav-item')
-  buttonProfile.classList.remove('active-nav-item')
 })
 
 buttonProfile.addEventListener('click', () => {
   header.innerText = 'Profile'
 
-  homePage.classList.add('hidden')
-  bookmarksPage.classList.add('hidden')
-  createPage.classList.add('hidden')
+  hideAllPages()
   profilePage.classList.remove('hidden')
 
-  buttonHome.classList.remove('active-nav-item')
-  buttonBookmarks.classList.remove('active-nav-item')
-  buttonCreate.classList.remove('active-nav-item')
+  deactivateAllButtons()
   buttonProfile.classList.add('active-nav-item')
 })
 

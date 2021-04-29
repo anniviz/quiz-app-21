@@ -16,6 +16,6 @@ textarea {
 }
 
 .darkmode input,
-textarea {
+.darkmode textarea {
   background: lightslategrey;
 }
