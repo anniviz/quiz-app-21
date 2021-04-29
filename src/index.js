@@ -18,41 +18,29 @@ const body = document.querySelector('body')
 buttonHome.addEventListener('click', () => {
   header.innerText = 'Quiz App'
 
-  hideAllPages()
-  homePage.classList.remove('hidden')
-
-  deactivateAllButtons()
-  buttonHome.classList.add('active-nav-item')
+  changePage(homePage)
+  activateButton(buttonHome)
 })
 
 buttonBookmarks.addEventListener('click', () => {
   header.innerText = 'Bookmarks'
 
-  hideAllPages()
-  bookmarksPage.classList.remove('hidden')
-
-  deactivateAllButtons()
-  buttonBookmarks.classList.add('active-nav-item')
+  changePage(bookmarksPage)
+  activateButton(buttonBookmarks)
 })
 
 buttonCreate.addEventListener('click', () => {
   header.innerText = 'New Question'
 
-  hideAllPages()
-  createPage.classList.remove('hidden')
-
-  deactivateAllButtons()
-  buttonCreate.classList.add('active-nav-item')
+  changePage(createPage)
+  activateButton(buttonCreate)
 })
 
 buttonProfile.addEventListener('click', () => {
   header.innerText = 'Profile'
 
-  hideAllPages()
-  profilePage.classList.remove('hidden')
-
-  deactivateAllButtons()
-  buttonProfile.classList.add('active-nav-item')
+  changePage(profilePage)
+  activateButton(buttonProfile)
 })
 
 buttonAnswer.addEventListener('click', () => {
@@ -66,6 +54,16 @@ bookmark.addEventListener('click', () => {
 buttonDarkMode.addEventListener('click', () => {
   body.classList.toggle('darkmode')
 })
+
+function changePage(page) {
+  hideAllPages()
+  page.classList.remove('hidden')
+}
+
+function activateButton(button) {
+  deactivateAllButtons()
+  button.classList.add('active-nav-item')
+}
 
 function hideAllPages() {
   homePage.classList.add('hidden')
