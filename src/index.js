@@ -1,3 +1,5 @@
+import getElement from './utils/getElement'
+
 const homePage = getElement('.home-page')
 const bookmarksPage = getElement('.bookmarks-page')
 const createPage = getElement('.create-page')
@@ -31,10 +33,6 @@ bookmark.addEventListener('click', () => {
 buttonDarkMode.addEventListener('click', () => {
   body.classList.toggle('darkmode')
 })
-
-function getElement(selector) {
-  return document.querySelector(selector)
-}
 
 function navigateToHome() {
   header.innerText = 'Quiz App'
