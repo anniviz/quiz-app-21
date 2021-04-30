@@ -1,19 +1,19 @@
-const homePage = document.querySelector('.home-page')
-const bookmarksPage = document.querySelector('.bookmarks-page')
-const createPage = document.querySelector('.create-page')
-const profilePage = document.querySelector('.profile-page')
+const homePage = getElement('.home-page')
+const bookmarksPage = getElement('.bookmarks-page')
+const createPage = getElement('.create-page')
+const profilePage = getElement('.profile-page')
 
-const buttonHome = document.querySelector('.button-home')
-const buttonBookmarks = document.querySelector('.button-bookmarks')
-const buttonCreate = document.querySelector('.button-create')
-const buttonProfile = document.querySelector('.button-profile')
-const buttonAnswer = document.querySelector('.js-button-answer')
-const buttonDarkMode = document.querySelector('.js-button-darkmode')
+const buttonHome = getElement('.button-home')
+const buttonBookmarks = getElement('.button-bookmarks')
+const buttonCreate = getElement('.button-create')
+const buttonProfile = getElement('.button-profile')
+const buttonAnswer = getElement('.js-button-answer')
+const buttonDarkMode = getElement('.js-button-darkmode')
 
-const header = document.querySelector('[data-header]')
-const bookmark = document.querySelector('.js-quiz-card > div')
-const answer = document.querySelector('.js-quiz-card__answer')
-const body = document.querySelector('body')
+const header = getElement('[data-header]')
+const bookmark = getElement('.js-quiz-card > div')
+const answer = getElement('.js-quiz-card__answer')
+const body = getElement('body')
 
 buttonHome.addEventListener('click', navigateToHome)
 buttonBookmarks.addEventListener('click', navigateToBookmarks)
@@ -31,6 +31,10 @@ bookmark.addEventListener('click', () => {
 buttonDarkMode.addEventListener('click', () => {
   body.classList.toggle('darkmode')
 })
+
+function getElement(selector) {
+  return document.querySelector(selector)
+}
 
 function navigateToHome() {
   header.innerText = 'Quiz App'
