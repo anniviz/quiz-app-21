@@ -1,14 +1,14 @@
+import setupDarkmode from './setupDarkmode'
 import setupNavigation from './setupNavigation'
 import getElement from './utils/getElement'
 
 const buttonAnswer = getElement('.js-button-answer')
-const buttonDarkMode = getElement('.js-button-darkmode')
 
 const bookmark = getElement('.js-quiz-card > div')
 const answer = getElement('.js-quiz-card__answer')
-const body = getElement('body')
 
 setupNavigation()
+setupDarkmode()
 
 buttonAnswer.addEventListener('click', () => {
   answer.classList.toggle('hidden')
@@ -16,8 +16,4 @@ buttonAnswer.addEventListener('click', () => {
 
 bookmark.addEventListener('click', () => {
   bookmark.classList.toggle('quiz-card__bookmark--selected')
-})
-
-buttonDarkMode.addEventListener('click', () => {
-  body.classList.toggle('darkmode')
 })
