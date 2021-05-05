@@ -3,6 +3,8 @@ import getElement from './utils/getElement'
 export default function setupCreate() {
   const form = getElement('[data-form]')
 
+  const cards = loadFromLocal('cards') ?? []
+
   form.addEventListener('submit', handleSubmit)
 
   function handleSubmit(event) {
@@ -16,6 +18,14 @@ export default function setupCreate() {
       tags: tags.value,
     }
 
-    console.log(newCard)
+    cards.push(newCard)
+    localStorage.setItem('cards', JSON.stringify(cards))
+
+    console.log(cards)
+    form.reset()
+  }
+
+  function loadFromLocal(key) {
+    return JSON.parse(localStorage.getItem(key))
   }
 }

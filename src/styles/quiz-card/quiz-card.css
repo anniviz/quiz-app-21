@@ -1,6 +1,7 @@
 .app-main {
   display: grid;
   grid-gap: 24px;
+  height: calc(100vh - 48px - 60px);
   overflow-y: scroll;
 }
 
