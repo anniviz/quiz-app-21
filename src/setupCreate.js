@@ -34,13 +34,14 @@ export default function setupCreate() {
 
     const cardEl = document.createElement('section')
     cardEl.className = 'quiz-card'
+    cardEl.setAttribute('data-js', 'quiz-card')
     cardEl.innerHTML = `
       <h2>${question}</h2>
       <button class="standard-button" data-js="quiz-card-button">
         show answer
       </button>
       <p
-        class="js-quiz-card__answer quiz-card__answer"
+        class="js-quiz-card__answer quiz-card__answer hidden"
         data-js="answer"
       >
         ${answer}

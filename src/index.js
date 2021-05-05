@@ -5,7 +5,7 @@ import setupNavigation from './setupNavigation'
 import setupQuizCards from './setupQuizCards'
 
 setupNavigation()
-setupQuizCards()
 setupCreate()
+setupQuizCards()
 setupBookmarks()
 setupDarkmode()
