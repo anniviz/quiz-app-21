@@ -51,3 +51,8 @@
   border: 12px solid crimson;
   border-bottom-color: transparent;
 }
+
+.quizz-card__tag-list {
+  display: flex;
+  gap: 8px;
+}

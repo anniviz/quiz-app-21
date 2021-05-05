@@ -31,7 +31,6 @@ export default function setupCreate() {
   function renderCard(card) {
     const { question, answer, tags } = card
     const tagArray = tags.split(',')
-    console.log(tagArray)
 
     const cardEl = document.createElement('section')
     cardEl.className = 'quiz-card'
@@ -46,10 +45,7 @@ export default function setupCreate() {
       >
         ${answer}
       </p>
-      <ul>
-        <li class="quiz-card__tag">#tag 1</li>
-        <li class="quiz-card__tag">#tag 2</li>
-        <li class="quiz-card__tag">#tag 3</li>
+      <ul data-js="tags" class="quizz-card__tag-list">
       </ul>
       <div
         role="button"
@@ -60,6 +56,17 @@ export default function setupCreate() {
       `
 
     homePage.append(cardEl)
+
+    const tagList = getElement('[data-js="tags"]', cardEl)
+    console.log(tagList)
+    tagArray.forEach(tag => renderTag(tag, tagList))
+  }
+
+  function renderTag(tag, list) {
+    const tagEl = document.createElement('li')
+    tagEl.className = 'quiz-card__tag'
+    tagEl.innerText = tag
+    list.append(tagEl)
   }
 
   function loadFromLocal(key) {
