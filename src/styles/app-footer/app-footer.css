@@ -9,15 +9,9 @@
   font-size: 36px;
 }
 
-.app-footer > a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
+.darkmode .app-footer {
+  background: var(--color-dark-secondary);
+  color: var(--color-dark-third);
 }
 
 .material-icons.md-36 {

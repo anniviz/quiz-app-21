@@ -1,6 +1,7 @@
 .app-main {
   display: grid;
   grid-gap: 24px;
+  height: calc(100vh - 48px - 60px);
   overflow-y: scroll;
 }
 
@@ -29,10 +30,6 @@
   margin-top: 24px;
 }
 
-.quiz-card__answer {
-  visibility: hidden;
-}
-
 .quiz-card__tag {
   list-style: none;
   display: inline-block;
@@ -53,4 +50,9 @@
 .quiz-card__bookmark--selected {
   border: 12px solid crimson;
   border-bottom-color: transparent;
+}
+
+.quizz-card__tag-list {
+  display: flex;
+  gap: 8px;
 }

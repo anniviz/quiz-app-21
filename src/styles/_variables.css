@@ -5,6 +5,10 @@
   --color-secondary: #28b5b5;
   --color-light-primary: #8fd9a8;
   --color-light-secondary: #d2e69c;
+  --color-dark-primary: #212121;
+  --color-dark-secondary: #323232;
+  --color-dark-third: #0d7377;
+  --color-dark-fourth: #14ffec;
   --margin-24: 24px;
   --margin-x-24: 0 24px;
   --padding-12: 12px;
